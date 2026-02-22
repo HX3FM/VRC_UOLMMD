@@ -15,8 +15,22 @@ Logs/
 UserSettings/
 # Ignore all files in the Assets directory except for the Assets/HX2xianglong90/UOLMMD directory and its contents
 Assets/*
-!Assets/HX2xianglong90/UOLMMD/**
+!Assets/HX2xianglong90/
 
-# keep the .gitignore file
-!.gitignore
-# keep Assets/HX2xianglong90/UOLMMD directory and its contents
+Assets/HX2xianglong90/*
+!Assets/HX2xianglong90/UOLMMD/
+
+# Assets/HX2xianglong90/UOLMMD/Anim2Animator/*
+
+# !Assets/HX2xianglong90/UOLMMD/Anim2Animator/Editor/
+# !Assets/HX2xianglong90/UOLMMD/Anim2Animator/Scripts/
+# !Assets/HX2xianglong90/UOLMMD/Anim2Animator/Output/
+
+# ignore all .anim files in the Anim2Animator directory and its subdirectories
+Assets/HX2xianglong90/UOLMMD/Anim2Animator/**/*.anim
+Assets/HX2xianglong90/UOLMMD/Anim2Animator/**/*.txt
+# Ignore all .anim files in the Input directory
+
+EssentialEnv/
+SampleAnimations/
+SampleCamAnimation/
