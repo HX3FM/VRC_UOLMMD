@@ -1,0 +1,22 @@
+
+# Ignore all files in the root directory
+*.csproj
+*.meta
+*.unity
+*.sln
+/packages/
+Converted/
+.vscode/
+ClientSimStorage/
+Library/
+Temp/
+ProjectSettings/
+Logs/
+UserSettings/
+# Ignore all files in the Assets directory except for the Assets/HX2xianglong90/UOLMMD directory and its contents
+Assets/*
+!Assets/HX2xianglong90/UOLMMD/**
+
+# keep the .gitignore file
+!.gitignore
+# keep Assets/HX2xianglong90/UOLMMD directory and its contents
