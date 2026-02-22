@@ -119,7 +119,7 @@ public class DanceMotionAdderComponent : MonoBehaviour
             
             //Add songUrl according to link.txt in each folder (if not already set from info.txt)
             string linkFilePath = Path.Combine(folder.FullName, "link.txt");
-            if (File.Exists(linkFilePath) && (songData == null || songData.songLink[folderIndex] == null || string.IsNullOrEmpty(songData.songLink[folderIndex].url)))
+            if (File.Exists(linkFilePath) && (songData == null || songData.songLink[folderIndex] == null || string.IsNullOrEmpty(songData.songLink[folderIndex].Get())))
             {
                 string linkContent = File.ReadAllText(linkFilePath);
                 if (songData != null)
