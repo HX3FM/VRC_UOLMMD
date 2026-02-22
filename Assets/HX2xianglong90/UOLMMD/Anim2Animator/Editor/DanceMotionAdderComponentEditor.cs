@@ -56,6 +56,17 @@ public class DanceMotionAdderComponentEditor : Editor
                 comp.GenerateDanceAnimators();
             }
         }
+
+        if (GUILayout.Button("Add Camera Clips"))
+        {
+            // 对选中的每个组件执行添加相机 clips
+            foreach (var t in targets)
+            {
+                var comp = t as DanceMotionAdderComponent;
+                if (comp == null) continue;
+                comp.AddCameraClips();
+            }
+        }
     }
 }
 }

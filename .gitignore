@@ -29,6 +29,31 @@ Assets/HX2xianglong90/*
 # ignore all .anim files in the Anim2Animator directory and its subdirectories
 Assets/HX2xianglong90/UOLMMD/Anim2Animator/**/*.anim
 Assets/HX2xianglong90/UOLMMD/Anim2Animator/**/*.txt
+
+
+Assets/HX2xianglong90/UOLMMD/Public/*
+!Assets/HX2xianglong90/UOLMMD/Public/Dances/
+
+
+!Assets/HX2xianglong90/UOLMMD/Public/Dances/Input
+Assets/HX2xianglong90/UOLMMD/Public/Dances/Input/**/*.anim
+Assets/HX2xianglong90/UOLMMD/Public/Dances/Input/**/*.vmd
+Assets/HX2xianglong90/UOLMMD/Public/Dances/Input/**/*.txt
+Assets/HX2xianglong90/UOLMMD/Public/Dances/Input/**/*.zip
+
+
+Assets/HX2xianglong90/UOLMMD/Public/**/*.anim
+Assets/HX2xianglong90/UOLMMD/Public/**/*.txt
+Assets/HX2xianglong90/UOLMMD/Public/**/*.mvd
+Assets/HX2xianglong90/UOLMMD/Public/**/*.pmx
+Assets/HX2xianglong90/UOLMMD/Public/**/*.jpg
+Assets/HX2xianglong90/UOLMMD/Public/**/*.vmd
+Assets/HX2xianglong90/UOLMMD/Public/**/*.zip
+Assets/HX2xianglong90/UOLMMD/Public/**/*.fx
+Assets/HX2xianglong90/UOLMMD/Public/**/*.x
+Assets/HX2xianglong90/UOLMMD/Public/**/*.pmd
+Assets/HX2xianglong90/UOLMMD/Public/**/*.png
+
 # Ignore all .anim files in the Input directory
 
 EssentialEnv/
