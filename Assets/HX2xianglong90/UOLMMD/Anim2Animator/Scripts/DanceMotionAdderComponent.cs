@@ -65,6 +65,7 @@ public class DanceMotionAdderComponent : MonoBehaviour
         int folderIndex = 0;
         songData.songTitle = new string[subFolders.Length];
         songData.songInfo = new string[subFolders.Length];
+        songData.songData = new string[subFolders.Length];
         songData.songLink = new VRCUrl[subFolders.Length];
         foreach (var folder in subFolders)
         {
@@ -94,7 +95,7 @@ public class DanceMotionAdderComponent : MonoBehaviour
                 {
                     if (line.StartsWith("Info: "))
                     {
-                        // Info: can be used for other purposes if needed
+                        songData.songInfo[folderIndex] = line.Substring(6).Trim();
                     }
                     else if (line.StartsWith("Data: "))
                     {
@@ -111,10 +112,10 @@ public class DanceMotionAdderComponent : MonoBehaviour
                 }
             }
 
-            // Set songInfo as animCount + "; " + dataContent
+            // Set songData as animCount + "; " + dataContent
             if (songData != null)
             {
-                songData.songInfo[folderIndex] = animCount + "; " + dataContent;
+                songData.songData[folderIndex] = animCount + "; " + dataContent;
             }
             
             //Add songUrl according to link.txt in each folder (if not already set from info.txt)
